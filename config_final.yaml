@@ -1,0 +1,196 @@
+_wandb:
+    value:
+        cli_version: 0.22.2
+        code_path: source-sgmse-train.py
+        e:
+            uwhjx4bx4fm00cs9udclq9wj0yppawe1:
+                args:
+                    - --backbone
+                    - ncsnpp
+                    - --sde
+                    - ouve
+                    - --log_dir
+                    - /kaggle/working/logs
+                    - --ckpt
+                    - /kaggle/input/sgmse-pretrained-v3-ckpt/epoch385-last.ckpt
+                    - --wandb_name
+                    - kaggle_finetune
+                    - --max_epochs
+                    - "400"
+                    - --devices
+                    - "2"
+                    - --accelerator
+                    - gpu
+                    - --save_ckpt_interval
+                    - "5000"
+                    - --base_dir
+                    - /kaggle/input/dataset
+                    - --batch_size
+                    - "4"
+                codePath: train.py
+                codePathLocal: train.py
+                cpu_count: 2
+                cpu_count_logical: 4
+                cudaVersion: "12.8"
+                disk:
+                    /:
+                        total: "8656922775552"
+                        used: "7068039446528"
+                email: benit4928@gmail.com
+                executable: /usr/bin/python3
+                git:
+                    commit: 5da247ae818cae45a98072cd411629ba1be25763
+                    remote: https://github.com/sp-uhh/sgmse.git
+                gpu: Tesla T4
+                gpu_count: 2
+                gpu_nvidia:
+                    - architecture: Turing
+                      cudaCores: 2560
+                      memoryTotal: "16106127360"
+                      name: Tesla T4
+                      uuid: GPU-1f38469b-ffcd-d64c-4a67-3ffb53093ab6
+                    - architecture: Turing
+                      cudaCores: 2560
+                      memoryTotal: "16106127360"
+                      name: Tesla T4
+                      uuid: GPU-8fcbbeb3-60cd-a5b8-30b4-47b170d028df
+                host: 9c7cfd091148
+                memory:
+                    total: "33662472192"
+                os: Linux-6.6.105+-x86_64-with-glibc2.35
+                program: /kaggle/working/sgmse/train.py
+                python: CPython 3.12.12
+                root: logs
+                startedAt: "2025-12-21T16:44:23.108666Z"
+                writerId: uwhjx4bx4fm00cs9udclq9wj0yppawe1
+        m:
+            - "1": trainer/global_step
+              "6":
+                - 3
+              "7": []
+            - "2": '*'
+              "5": 1
+              "6":
+                - 1
+              "7": []
+        python_version: 3.12.12
+        t:
+            "1":
+                - 1
+                - 5
+                - 9
+                - 11
+                - 41
+                - 49
+                - 53
+                - 71
+                - 103
+                - 105
+            "2":
+                - 1
+                - 5
+                - 9
+                - 11
+                - 41
+                - 49
+                - 53
+                - 71
+                - 103
+                - 105
+            "3":
+                - 7
+                - 13
+                - 66
+            "4": 3.12.12
+            "5": 0.22.2
+            "6": 4.57.1
+            "8":
+                - 2
+            "12": 0.22.2
+            "13": linux-x86_64
+"N":
+    value: 30
+attn_resolutions:
+    value:
+        - 16
+backbone:
+    value: ncsnpp
+base_dir:
+    value: /kaggle/input/dataset
+batch_size:
+    value: 4
+c_in:
+    value: "1"
+c_out:
+    value: "1"
+c_skip:
+    value: "0"
+centered:
+    value: true
+ch_mult:
+    value:
+        - 1
+        - 1
+        - 2
+        - 2
+        - 2
+        - 2
+        - 2
+data_module_cls:
+    value: SpecsDataModule
+dummy:
+    value: false
+ema_decay:
+    value: 0.999
+format:
+    value: default
+hop_length:
+    value: 128
+l1_weight:
+    value: 0.001
+loss_type:
+    value: score_matching
+loss_weighting:
+    value: sigma^2
+lr:
+    value: 0.0001
+n_fft:
+    value: 510
+network_scaling:
+    value: null
+normalize:
+    value: noisy
+num_eval_files:
+    value: 20
+num_frames:
+    value: 256
+num_res_blocks:
+    value: 2
+num_workers:
+    value: 4
+pesq_weight:
+    value: 0
+sampler_type:
+    value: pc
+sde:
+    value: ouve
+sigma_data:
+    value: 0.1
+sigma_max:
+    value: 0.5
+sigma_min:
+    value: 0.05
+spec_abs_exponent:
+    value: 0.5
+spec_factor:
+    value: 0.15
+sr:
+    value: 16000
+t_eps:
+    value: 0.03
+theta:
+    value: 1.5
+transform_type:
+    value: exponent
+window:
+    value: hann
